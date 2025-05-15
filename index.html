@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitnessHub - Your Ultimate Gym Experience</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar Component -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-dumbbell me-2"></i>FitnessHub
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="classes.html">Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel Component -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/gym1.jpg" class="d-block w-100" alt="Gym Interior">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Transform Your Body</h1>
+                    <p>Join us today and start your fitness journey</p>
+                    <a href="#membership" class="btn btn-primary btn-lg">Get Started</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/gym2.jpg" class="d-block w-100" alt="Personal Training">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Expert Trainers</h1>
+                    <p>Work with certified professionals</p>
+                    <a href="classes.html" class="btn btn-primary btn-lg">View Classes</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/gym3.jpg" class="d-block w-100" alt="Group Class">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Community Spirit</h1>
+                    <p>Join our supportive fitness community</p>
+                    <a href="#contact" class="btn btn-primary btn-lg">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Features Section with Cards -->
+    <section id="features" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4">Why Choose FitnessHub?</h2>
+                <p class="lead">We offer the best facilities and services for your fitness needs</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="assets/cardio.jpg" class="card-img-top" alt="Cardio Equipment">
+                        <div class="card-body">
+                            <h5 class="card-title">Modern Equipment</h5>
+                            <p class="card-text">State-of-the-art cardio and strength training equipment from leading brands.</p>
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="assets/trainer.jpg" class="card-img-top" alt="Personal Trainer">
+                        <div class="card-body">
+                            <h5 class="card-title">Expert Trainers</h5>
+                            <p class="card-text">Certified personal trainers to guide you through your fitness journey.</p>
+                            <a href="#" class="btn btn-outline-primary">Meet Our Team</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="assets/group.jpg" class="card-img-top" alt="Group Class">
+                        <div class="card-body">
+                            <h5 class="card-title">Diverse Classes</h5>
+                            <p class="card-text">From yoga to HIIT, we offer classes for all fitness levels.</p>
+                            <a href="classes.html" class="btn btn-outline-primary">View Classes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Pricing with Bootstrap List Group -->
+    <section id="membership" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4">Membership Plans</h2>
+                <p class="lead">Choose the plan that fits your lifestyle</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-header bg-primary text-white">
+                            <h3 class="text-center my-2">Basic Plan</h3>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><i class="fas fa-check text-success me-2"></i>Gym Access</li>
+                            <li class="list-group-item"><i class="fas fa-check text-success me-2"></i>Locker Room</li>
+                            <li class="list-group-item"><i class="fas fa-times text-danger me-2"></i>Group Classes</li>
+                            <li class="list-group-item"><i class="fas fa-times text-danger me-2"></i>Personal Trainer</li>
+                            <li class="list-group-item"><i class="fas fa-times text-danger me-2"></i>Sauna Access</li>
+                            <li class="list-group-item text-center py-3">
+                                <h4>$29.99/month</h4>
+                                <button class="btn btn-primary mt-2">Sign Up</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-header bg-success text-white">
+                            <h3 class="text-center my-2">Premium Plan</h3>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><i class="fas fa-check text-success me-2"></i>Gym Access</li>
+                            <li class="list-group-item"><i class="fas fa-check text-success me-2"></i>Locker Room</li>
+                            <li class="list-group-item"><i class="fas fa-check text-success me-2"></i>All Group Classes</li>
+                            <li class="list-group-item"><i class="fas fa-check text-success me-2"></i>2 Personal Training Sessions</li>
+                            <li class="list-group-item"><i class="fas fa-check text-success me-2"></i>Sauna Access</li>
+                            <li class="list-group-item text-center py-3">
+                                <h4>$59.99/month</h4>
+                                <button class="btn btn-success mt-2">Sign Up</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials with Bootstrap Carousel -->
+    <section id="testimonials" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4">Success Stories</h2>
+                <p class="lead">What our members say about us</p>
+            </div>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="testimonial-item text-center p-4">
+                                    <img src="assets/user1.jpg" class="rounded-circle mb-3" width="100" alt="User">
+                                    <h5>Sarah Johnson</h5>
+                                    <p class="text-muted">Member since 2020</p>
+                                    <p class="lead">"FitnessHub changed my life! The trainers are amazing and the community is so supportive. I've lost 30 pounds and gained so much confidence."</p>
+                                    <div class="text-warning">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="testimonial-item text-center p-4">
+                                    <img src="assets/user2.jpg" class="rounded-circle mb-3" width="100" alt="User">
+                                    <h5>Michael Chen</h5>
+                                    <p class="text-muted">Member since 2021</p>
+                                    <p class="lead">"The variety of equipment and classes is unmatched. I went from never working out to competing in my first marathon thanks to FitnessHub!"</p>
+                                    <div class="text-warning">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form with Bootstrap Form Components -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="display-4 mb-4">Get In Touch</h2>
+                    <p class="lead">Have questions? We're here to help!</p>
+                    <div class="mb-4">
+                        <h5><i class="fas fa-map-marker-alt me-2"></i>Address</h5>
+                        <p>123 Fitness Street, Healthville, HV 12345</p>
+                    </div>
+                    <div class="mb-4">
+                        <h5><i class="fas fa-phone me-2"></i>Phone</h5>
+                        <p>(555) 123-4567</p>
+                    </div>
+                    <div class="mb-4">
+                        <h5><i class="fas fa-envelope me-2"></i>Email</h5>
+                        <p>info@fitnesshub.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title mb-4">Send Us a Message</h3>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <select class="form-select" id="subject">
+                                        <option selected>Choose...</option>
+                                        <option>Membership Inquiry</option>
+                                        <option>Personal Training</option>
+                                        <option>Group Classes</option>
+                                        <option>General Question</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                                </div>
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-primary">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with Bootstrap Grid -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5><i class="fas fa-dumbbell me-2"></i>FitnessHub</h5>
+                    <p>Your ultimate destination for fitness and wellness. We're committed to helping you achieve your health goals.</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="classes.html" class="text-white">Classes</a></li>
+                        <li><a href="#features" class="text-white">Features</a></li>
+                        <li><a href="#testimonials" class="text-white">Testimonials</a></li>
+                        <li><a href="#contact" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5>Opening Hours</h5>
+                    <ul class="list-unstyled">
+                        <li>Monday - Friday: 5:00 AM - 11:00 PM</li>
+                        <li>Saturday: 7:00 AM - 9:00 PM</li>
+                        <li>Sunday: 8:00 AM - 8:00 PM</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe to get updates on new classes and special offers.</p>
+                    <form class="mb-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2023 FitnessHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
