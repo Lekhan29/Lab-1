@@ -1,0 +1,157 @@
+/* General Styles */
+:root {
+    --primary: #0d6efd;
+    --secondary: #6c757d;
+    --dark: #212529;
+    --light: #f8f9fa;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 56px; /* Offset for fixed navbar */
+  }
+  
+  section {
+    padding: 80px 0;
+  }
+  
+  /* Navbar Styles */
+  .navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  
+  .navbar-brand i {
+    color: var(--primary);
+  }
+  
+  .nav-link {
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+  }
+  
+  /* Hero Carousel */
+  .carousel-item {
+    height: 100vh;
+    min-height: 500px;
+    background: no-repeat center center scroll;
+    background-size: cover;
+  }
+  
+  .carousel-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .carousel-caption {
+    bottom: 180px;
+    z-index: 10;
+  }
+  
+  .carousel-caption h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+  
+  .carousel-caption p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Cards */
+  .card {
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  /* Testimonials */
+  .testimonial-item {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Contact Form */
+  .form-control:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  }
+  
+  /* Footer */
+  footer {
+    background: var(--dark);
+  }
+  
+  .social-icons a {
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: var(--primary);
+  }
+  
+  /* Classes Page Specific */
+  .class-schedule {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .accordion-button:not(.collapsed) {
+    background-color: rgba(13, 110, 253, 0.1);
+    color: var(--primary);
+  }
+  
+  .accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .carousel-caption {
+      bottom: 100px;
+    }
+    
+    .carousel-caption h1 {
+      font-size: 2.5rem;
+    }
+    
+    section {
+      padding: 60px 0;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .carousel-caption h1 {
+      font-size: 2rem;
+    }
+    
+    .carousel-caption p {
+      font-size: 1rem;
+    }
+    
+    .carousel-caption .btn {
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+    }
+  }
