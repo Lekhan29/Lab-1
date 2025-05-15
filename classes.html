@@ -59,6 +59,278 @@
         </div>
     </div>
 </header>
+    <!-- Class Schedule with Bootstrap Accordion -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4">Class Schedule</h2>
+                <p class="lead">Weekly group fitness classes</p>
+            </div>
+            
+            <div class="accordion" id="classSchedule">
+                <!-- Monday -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#monday">
+                            <i class="fas fa-calendar-day me-2"></i> Monday
+                        </button>
+                    </h2>
+                    <div id="monday" class="accordion-collapse collapse show" data-bs-parent="#classSchedule">
+                        <div class="accordion-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead class="table-primary">
+                                        <tr>
+                                            <th>Time</th>
+                                            <th>Class</th>
+                                            <th>Instructor</th>
+                                            <th>Level</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>6:00 AM</td>
+                                            <td>Morning Yoga</td>
+                                            <td>Sarah</td>
+                                            <td><span class="badge bg-success">Beginner</span></td>
+                                            <td><button class="btn btn-sm btn-primary">Book Now</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>12:00 PM</td>
+                                            <td>HIIT Blast</td>
+                                            <td>Mike</td>
+                                            <td><span class="badge bg-warning text-dark">Intermediate</span></td>
+                                            <td><button class="btn btn-sm btn-primary">Book Now</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>6:30 PM</td>
+                                            <td>Spin Class</td>
+                                            <td>Jessica</td>
+                                            <td><span class="badge bg-danger">Advanced</span></td>
+                                            <td><button class="btn btn-sm btn-primary">Book Now</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tuesday -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tuesday">
+                            <i class="fas fa-calendar-day me-2"></i> Tuesday
+                        </button>
+                    </h2>
+                    <div id="tuesday" class="accordion-collapse collapse" data-bs-parent="#classSchedule">
+                        <div class="accordion-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead class="table-primary">
+                                        <tr>
+                                            <th>Time</th>
+                                            <th>Class</th>
+                                            <th>Instructor</th>
+                                            <th>Level</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>7:00 AM</td>
+                                            <td>Bootcamp</td>
+                                            <td>Mike</td>
+                                            <td><span class="badge bg-warning text-dark">Intermediate</span></td>
+                                            <td><button class="btn btn-sm btn-primary">Book Now</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>5:30 PM</td>
+                                            <td>Pilates</td>
+                                            <td>Emma</td>
+                                            <td><span class="badge bg-success">Beginner</span></td>
+                                            <td><button class="btn btn-sm btn-primary">Book Now</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Wednesday -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#wednesday">
+                            <i class="fas fa-calendar-day me-2"></i> Wednesday
+                        </button>
+                    </h2>
+                    <div id="wednesday" class="accordion-collapse collapse" data-bs-parent="#classSchedule">
+                        <div class="accordion-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead class="table-primary">
+                                        <tr>
+                                            <th>Time</th>
+                                            <th>Class</th>
+                                            <th>Instructor</th>
+                                            <th>Level</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>6:30 AM</td>
+                                            <td>Power Yoga</td>
+                                            <td>Sarah</td>
+                                            <td><span class="badge bg-warning text-dark">Intermediate</span></td>
+                                            <td><button class="btn btn-sm btn-primary">Book Now</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>6:00 PM</td>
+                                            <td>CrossFit</td>
+                                            <td>David</td>
+                                            <td><span class="badge bg-danger">Advanced</span></td>
+                                            <td><button class="btn btn-sm btn-primary">Book Now</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Thursday through Sunday would follow the same pattern -->
+            </div>
+        </div>
+    </section>
 
+    <!-- Class Categories with Bootstrap Tabs -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4">Class Categories</h2>
+                <p class="lead">Find your perfect workout</p>
+            </div>
+            
+            <ul class="nav nav-pills justify-content-center mb-4" id="classTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="strength-tab" data-bs-toggle="pill" data-bs-target="#strength" type="button">
+                        <i class="fas fa-dumbbell me-2"></i>Strength Training
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="cardio-tab" data-bs-toggle="pill" data-bs-target="#cardio" type="button">
+                        <i class="fas fa-heartbeat me-2"></i>Cardio
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="mindbody-tab" data-bs-toggle="pill" data-bs-target="#mindbody" type="button">
+                        <i class="fas fa-spa me-2"></i>Mind & Body
+                    </button>
+                </li>
+            </ul>
+            
+            <div class="tab-content" id="classTabsContent">
+                <div class="tab-pane fade show active" id="strength" role="tabpanel">
+                    <div class="row g-4">
+                        <!-- Strength training class cards would go here -->
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="assets/strength-training.jpg" class="card-img-top" alt="Strength Training">
+                                <div class="card-body">
+                                    <h5 class="card-title">Power Lifting</h5>
+                                    <p class="card-text">Build raw strength with proper technique under expert supervision.</p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="badge bg-primary"><i class="fas fa-clock me-1"></i>60 min</span>
+                                        <button class="btn btn-sm btn-outline-primary">View Schedule</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- More strength class cards... -->
+                    </div>
+                </div>
+                
+                <div class="tab-pane fade" id="cardio" role="tabpanel">
+                    <div class="row g-4">
+                        <!-- Cardio class cards would go here -->
+                    </div>
+                </div>
+                
+                <div class="tab-pane fade" id="mindbody" role="tabpanel">
+                    <div class="row g-4">
+                        <!-- Mind & Body class cards would go here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Training Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="assets/personal-training.jpg" class="img-fluid rounded shadow" alt="Personal Training">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="display-4 mb-4">Personal Training</h2>
+                    <p class="lead">Get one-on-one attention from our certified trainers</p>
+                    <p>Our personal training sessions are tailored to your specific goals, whether you're looking to lose weight, build muscle, improve athletic performance, or just get healthier.</p>
+                    
+                    <div class="d-grid gap-2 d-sm-flex mt-4">
+                        <button class="btn btn-primary btn-lg px-4" data-bs-toggle="modal" data-bs-target="#trainingModal">
+                            <i class="fas fa-calendar-check me-2"></i>Book a Session
+                        </button>
+                        <a href="#trainers" class="btn btn-outline-secondary btn-lg px-4">
+                            <i class="fas fa-users me-2"></i>Meet Our Trainers
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Training Modal -->
+    <div class="modal fade" id="trainingModal" tabindex="-1" aria-labelledby="trainingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="trainingModalLabel">Book Personal Training</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="trainerSelect" class="form-label">Select Trainer</label>
+                            <select class="form-select" id="trainerSelect" required>
+                                <option value="" selected disabled>Choose trainer...</option>
+                                <option>Sarah Johnson - Strength Specialist</option>
+                                <option>Mike Chen - HIIT Expert</option>
+                                <option>Emma Wilson - Yoga & Pilates</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="sessionDate" class="form-label">Session Date</label>
+                            <input type="date" class="form-control" id="sessionDate" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="sessionTime" class="form-label">Session Time</label>
+                            <input type="time" class="form-control" id="sessionTime" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="goals" class="form-label">Training Goals</label>
+                            <textarea class="form-control" id="goals" rows="3" placeholder="Describe your fitness goals..."></textarea>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Submit Booking Request</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
